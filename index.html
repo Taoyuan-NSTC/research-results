@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研成果展示 - 桃園市氣候變遷專區</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif; 
+            background-color: #fce4e4; 
+            margin: 0; 
+            padding: 40px 20px; 
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: auto; }
+        
+        h1 { 
+            color: #b71c1c; 
+            text-align: center; 
+            font-size: 2.2rem; 
+            margin-bottom: 10px; 
+            font-weight: bold;
+        }
+        .header-underline { width: 80px; height: 4px; background: #e57373; margin: 0 auto 40px; border-radius: 2px; }
+
+        /* 卡片網格：自動適應螢幕寬度 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* 卡片主體 */
+        .paper-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #ffcdd2;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(183, 28, 28, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(183, 28, 28, 0.15);
+            border-color: #e57373;
+        }
+
+        /* 統一學術圖示區塊 */
+        .academic-icon-box {
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffebee 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-stack {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-main { font-size: 4rem; color: #ef9a9a; }
+        .icon-badge { 
+            position: absolute; 
+            bottom: -5px; 
+            right: -5px; 
+            font-size: 1.8rem; 
+            color: #d32f2f; 
+            background: white;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        /* 文字資訊 */
+        .paper-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        
+        .paper-year { 
+            display: inline-block;
+            background: #ffebee;
+            color: #d32f2f;
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+
+        .paper-title { 
+            font-size: 1.15rem; 
+            color: #2c3e50; 
+            font-weight: bold; 
+            margin: 0 0 18px 0;
+            line-height: 1.6;
+            min-height: 4.8em; /* 確保長標題高度對齊 */
+            text-align: justify;
+        }
+
+        .paper-journal { 
+            font-size: 0.9rem; 
+            color: #616161; 
+            padding-top: 15px;
+            border-top: 1px dashed #ffcdd2;
+            margin-top: auto;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.4;
+        }
+        .paper-journal i { margin-right: 8px; color: #e57373; margin-top: 3px; }
+
+        /* 底部提示條 */
+        .card-footer {
+            background: #fff5f5;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #b71c1c;
+            font-weight: bold;
+            border-top: 1px solid #ffebee;
+        }
+
+        @media (max-width: 600px) {
+            .card-grid { grid-template-columns: 1fr; }
+            .paper-title { min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>科研成果展示</h1>
+        <div class="header-underline"></div>
+
+        <div class="card-grid">
+            
+            <a href="pdfs/應用多模式多空間尺度之氣候變遷淹水災害風險圖評估桃園市韌性防災調適之研究.pdf" target="_blank" class="paper-card">
+                <div class="academic-icon-box">
+                    <div class="icon-stack">
+                        <i class="fas fa-book-open icon-main"></i>
+                        <i class="fas fa-award icon-badge"></i>
+                    </div>
+                </div>
+                <div class="paper-info">
+                    <div class="paper-year">2022年</div>
+                    <h2 class="paper-title">應用多模式多空間尺度之氣候變遷淹水災害風險圖評估桃園市韌性防災調適之研究</h2>
+                    <div class="paper-journal">
+                        <i class="fas fa-file-alt"></i>
+                        2023年臺灣災害管理研討會-後疫情下之氣候變遷調適韌性與智慧災害管理
+                    </div>
+                </div>
+                <div class="card-footer">查看完整 PDF <i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="pdfs/探討桃園市坡地災害風險減輕與氣候變遷調適策略.pdf" target="_blank" class="paper-card">
+                <div class="academic-icon-box">
+                    <div class="icon-stack">
+                        <i class="fas fa-mountain icon-main"></i>
+                        <i class="fas fa-shield-alt icon-badge"></i>
+                    </div>
+                </div>
+                <div class="paper-info">
+                    <div class="paper-year">2023年</div>
+                    <h2 class="paper-title">探討桃園市坡地災害風險減輕與氣候變遷調適策略</h2>
+                    <div class="paper-journal">
+                        <i class="fas fa-file-alt"></i>
+                        「2024年臺灣災害管理研討會」暨「113年國科會部自然科學及永續研究發展處防災科技學門計畫成果發表會」
+                    </div>
+                </div>
+                <div class="card-footer">查看完整 PDF <i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="pdfs/桃園市農業用地之災害風險減輕與氣候變遷調適策略.pdf" target="_blank" class="paper-card">
+                <div class="academic-icon-box">
+                    <div class="icon-stack">
+                        <i class="fas fa-leaf icon-main"></i>
+                        <i class="fas fa-check-circle icon-badge"></i>
+                    </div>
+                </div>
+                <div class="paper-info">
+                    <div class="paper-year">2025年</div>
+                    <h2 class="paper-title">桃園市農業用地之災害風險減輕與氣候變遷調適策略</h2>
+                    <div class="paper-journal">
+                        <i class="fas fa-university"></i>
+                        中國土木水利工程學刊第三十七卷第七期
+                    </div>
+                </div>
+                <div class="card-footer">查看完整 PDF <i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="pdfs/探討氣候變遷下桃園市農業領域之乾旱風險評估.pdf" target="_blank" class="paper-card">
+                <div class="academic-icon-box">
+                    <div class="icon-stack">
+                        <i class="fas fa-tint-slash icon-main"></i>
+                        <i class="fas fa-chart-area icon-badge"></i>
+                    </div>
+                </div>
+                <div class="paper-info">
+                    <div class="paper-year">2025年</div>
+                    <h2 class="paper-title">探討氣候變遷下桃園市農業領域之乾旱風險評估</h2>
+                    <div class="paper-journal">
+                        <i class="fas fa-file-alt"></i>
+                        「2025年臺灣災害管理研討會」暨「114年國科會部自然科學及永續研究發展處防災科技學門計畫成果發表會」
+                    </div>
+                </div>
+                <div class="card-footer">查看完整 PDF <i class="fas fa-arrow-right"></i></div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
